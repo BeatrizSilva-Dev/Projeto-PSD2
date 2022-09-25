@@ -3,6 +3,7 @@ def getLinha(matriz, n):
 
 def getColuna(matriz, n):
     return [i[n] for i in matriz]
+
 mat1 = [[2, 2], [2, 2]]            # uma matriz 2x2
 mat1lin = len(mat1)                # retorna 2
 mat1col = len(mat1[0])             # retorna 2
@@ -21,5 +22,5 @@ for i in range(mat1lin):
 
         # e em seguida adiciona a matRes a soma das multiplicações
         matRes[i].append(sum(listMult))
-
+print("---------------")
 print(matRes)

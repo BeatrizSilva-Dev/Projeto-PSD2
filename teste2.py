@@ -1,0 +1,3 @@
+
+f = open('inta.txt') 
+
