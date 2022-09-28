@@ -4,7 +4,7 @@ antes = datetime.now()
 print("Antes = ", antes)
 #Matriz 1
 
-arq = open('int.txt', 'r')  
+arq = open('512.txt', 'r')  
 texto = []  
 matriz1 = [] 
 texto = arq.readlines() 

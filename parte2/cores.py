@@ -21,8 +21,8 @@ def getColuna(matriz, n):
     return [i[n] for i in matriz]
 
 
-def matriz():
-    mat1  = matriz1
+
+mat1  = matriz1
 mat1lin = len(matriz1)               
 mat1col = len(matriz1[0]) 
 
@@ -42,8 +42,8 @@ for i in range(len(texto2)):
 
 matriz2.pop(0)  
 
-def matriz2():
-    mat2 = matriz2
+
+mat2 = matriz2
 mat2lin = len(matriz2)               
 mat2col = len(matriz2[0]) 
 

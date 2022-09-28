@@ -1,3 +1,0 @@
-
-f = open('inta.txt') 
-
