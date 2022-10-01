@@ -1,11 +1,11 @@
 from datetime import datetime
-import multiprocessing
+import multiprocessing 
 antes = datetime.now()
 print("Antes = ", antes)
-#Matriz 1
 
-arq = open('512.txt', 'r')  
-texto = []  
+
+arq = open('2048.txt', 'r')  
+texto = [] 
 matriz1 = [] 
 texto = arq.readlines() 
 
@@ -13,6 +13,11 @@ for i in range(len(texto)):
     matriz1.append(texto[i].split())
 
 matriz1.pop(0) 
+for x in range (len(matriz1)):
+   for y in range(len(matriz1[0])):
+    matriz1[x][y] = float(matriz1[x][y]) 
+
+
  
 def getLinha(matriz, n):
     return [i for i in matriz[n]]  
@@ -28,7 +33,6 @@ for x in range (mat1lin):
    for y in range(mat1col):
     matriz1[x][y] = float(matriz1[x][y]) 
 
-#Matriz 2
 
 arq2 = open('int.txt', 'r')  
 texto2 = []  
@@ -46,7 +50,6 @@ mat2col = len(matriz2[0])
 
 for x in range (mat2lin):
    for y in range(mat2col):
-    #print(matriz1[x][z])
     matriz2[x][y] = float(matriz2[x][y]) 
            
 matRes = []
@@ -83,6 +86,5 @@ with open('matrizes.txt', 'a') as arquivo:
     arquivo.write('Tempo Final : ')
     arquivo.write(str(depois))
 
-#print(str(len(matriz2)))
 
 
